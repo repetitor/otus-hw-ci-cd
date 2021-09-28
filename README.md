@@ -60,6 +60,11 @@ sudo -u postgres bash -c "mcedit /etc/postgresql/12/main/pg_hba.conf"
 
 #mcedit /etc/postgresql/12/main/postgresql.conf
 sudo -u postgres bash -c "mcedit /etc/postgresql/12/main/postgresql.conf"
+
+sudo service postgresql restart
+
+
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 находим закомментированную строку с параметром
         `listen_addresses` и заменяем её на
             ```
