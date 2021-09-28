@@ -29,6 +29,7 @@ ufw allow OpenSSH
 ufw enable -y
 ufw status
 #>> Firewall is active and enabled on system startup
+ufw disable # пришлось вырубить, ибо база не коннектилась со шторма
 
 # from SCRIPT.md for lesson 32
 su githubuser
